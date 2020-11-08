@@ -23,7 +23,6 @@ public class ConfigureASystem {
         Employee employee = system.getEmployeeDirectory().createEmployee("PLC");
         UserAccount ua1 = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         
-        
         //create some customers
         Customer customer1 = system.getCustomerDirectory().createCustomer("Alex", "alexander39");
         Customer customer2 = system.getCustomerDirectory().createCustomer("Anita", "anita57");
@@ -42,19 +41,6 @@ public class ConfigureASystem {
         UserAccount ua6 = system.getUserAccountDirectory().createUserAccount("wendy22", "wendy22", employee, new AdminRole());
         UserAccount ua7 = system.getUserAccountDirectory().createUserAccount("sam22", "sam22", employee, new AdminRole());
         
-        
-        /**
-        //create some restaurants with menu
-        String[] menu1 = new String[]{"Fried Chicken", "Nuggets", "Sandwich"};
-        String[] menu2 = new String[]{"French Fried", "McChicken", "Big Mac"};
-        String[] menu3 = new String[]{"Dave's Single", "Croissant", "French Fries"};
-        Restaurant restaurant1 = system.getRestaurantDirectory().createRestaurant("KFC", menu1);
-        Restaurant restaurant2 = system.getRestaurantDirectory().createRestaurant("McDonalds", menu2);
-        Restaurant restaurant3 = system.getRestaurantDirectory().createRestaurant("Wendy's", menu3);
-        **/
-        
-        
-  
         return system;
     }
     
